@@ -1,0 +1,21 @@
+<div id="error-console"></div>
+<div class="row no-gutters third-color">
+  <div class="col-md-4">
+    <div class="form justify-content-center margin-small">
+      <%= form_with(url: { action: 'create' }, html: { id: 'urls-form' }) do |form| %>
+        <p style="padding: 1rem">Put your Url Here</p>
+        <p><%= form.text_field :long_url, class: 'input-field', required: true %></p>
+        <p class="actions"><%= form.submit 'Generate Url', class: 'submit-button main-color' %></p>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card-body ">
+      <h5 class="card-title" style="text-align: center;">Links</h5>
+      <p class="card-text">Long Link:</p>
+      <p><span id="long"></span></p>
+      <p class="card-text">Short Link:</p>
+      <p><span id="short"></span></p>
+    </div>
+  </div>
+</div>

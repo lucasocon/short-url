@@ -1,0 +1,9 @@
+<% if @url.errors.any? %>
+  document.getElementById("error-console").innerHTML = "<h1>Impossible to create the short-url, Url invalidates</h1>"
+  document.getElementById("long").innerHTML = " "
+  document.getElementById("short").innerHTML = " "
+<% else %>
+  document.getElementById("long").innerHTML = "<a><%= @url.long_url %></a>"
+  document.getElementById("short").innerHTML = "<a><%= @url.short_url %></a>"
+  document.getElementById("error-console").innerHTML = " "
+<%end%>

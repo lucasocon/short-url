@@ -1,0 +1,18 @@
+<div id="table">
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Short Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @urls.each do |url| %>
+        <tr>
+          <td><p><%= url.page_title %></p></td>
+          <td class="table-link"><%= link_to url.short_url, "/#{url.code}" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  background-image: url(/assets/background.jpeg);
+  background-size: 100%;
+}
+
+#error-console{
+  text-align: center;
+   color:red;
+}
+
+#table{
+  margin: 2em;
+  color: white
+}
+
+#table table{
+  background-color:rgba(83, 83, 83, 0.78);
+  margin: auto;
+}
+
+.table-link a:hover{
+  text-decoration: none;
+}
+
+#form{
+  max-height: 50%;
+  max-width: 50%;
+  margin-top:5rem;
+  align-self: center;
+}
+
+.main-color{
+  background-color: #e91d28;
+  color: white;	
+}
+
+.second-color{
+  background-color: #212121;
+  color: white;
+}
+
+.third-color{
+  background-color:#535353;
+  color:white;
+}
+
+.margin-small{
+  margin-left: 1rem;
+}
+
+.submit-button{
+  border: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  height: 4rem;
+  width: 9rem;
+}
+
+.center-card{
+  justify-content: center;
+  margin-left: 25%;
+}
+
+.input-field{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-item a:hover{
+  text-decoration: none;
+}
+
+#error-console h1{
+  font-size: 1em;
+  text-align: center;
+  color:red;
+}
