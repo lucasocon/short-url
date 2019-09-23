@@ -32,4 +32,15 @@ RSpec.describe Url, type: :model do
 
     expect(url.redirects_amount).to eq(4)
   end
+
+  it 'You should return the first 100 most visited url records.' do
+    create(:url_created)
+    create(:url_new_1)
+
+    url = Url.top_100
+
+    expect(url).not_to be_empty
+    expect(url.size).to   eq(2)
+    expect(url.first.redirects_amount).to eq(3)
+  end
 end

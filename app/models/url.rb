@@ -15,6 +15,10 @@ class Url < ApplicationRecord
     self.save!
   end
 
+  def self.top_100
+    Url.all.limit(100).order(redirects_amount: :desc)
+  end
+
   private
 
   def set_short_url
