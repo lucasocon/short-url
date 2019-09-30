@@ -14,8 +14,7 @@ class UrlsController < ApplicationController
     @urls = Url.top_100
   end
 
-  def new
-  end
+  def new; end
 
   def create
     @url = Url.find_or_create_by(long_url: params[:long_url])
