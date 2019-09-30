@@ -4,6 +4,6 @@
   document.getElementById("short").innerHTML = " "
 <% else %>
   document.getElementById("long").innerHTML = "<a><%= @url.long_url %></a>"
-  document.getElementById("short").innerHTML = "<a><%= @url.short_url %></a>"
+  document.getElementById("short").innerHTML = "<a href=<%= @url.short_url %>>localhost:3002<%= @url.short_url %></a>"
   document.getElementById("error-console").innerHTML = " "
 <%end%>
