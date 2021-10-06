@@ -33,7 +33,7 @@ gem "validate_url"
 
 gem 'mechanize'
 
-gem 'sidekiq', '< 5'
+gem 'sidekiq', '< 6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
